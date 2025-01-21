@@ -1,11 +1,13 @@
 import Project from "../components/Project";
+import RPSImage from "../assets/RPS.png";
+import EmployeeTrackerImage from "../assets/employee-tracker.png";
 
 export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <Project title="Rock, Paper, Scissors Game" image='./src/assets/RPS.png' repoLink="https://github.com/tannerflake/vehicle-simulator" />
-      <Project title="Employee Tracker CMS" image="./src/assets/employee-tracker.png" repoLink="https://github.com/tannerflake/employee-tracker" />
+      <Project title="Rock, Paper, Scissors Game" image={RPSImage} repoLink="https://github.com/tannerflake/vehicle-simulator" />
+      <Project title="Employee Tracker CMS" image={EmployeeTrackerImage} repoLink="https://github.com/tannerflake/employee-tracker" />
     </div>
   );
 }
