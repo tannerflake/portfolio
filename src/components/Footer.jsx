@@ -2,7 +2,7 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <p>© 2023 - Todos os direitos reservados</p>
+      <p>Call me at (480) 925-4400 or email me at tannerflake@gmail.com</p>
     </footer>
 );
 }

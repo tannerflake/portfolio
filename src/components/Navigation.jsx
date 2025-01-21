@@ -1,14 +1,9 @@
-import { Link, useLocation } from 'react-router-dom';
-import '../App.css';
+import {Link, useLocation} from 'react-router-dom';
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
-function NavTabs() {
+function Navigation() {
   const currentPage = useLocation().pathname;
 
   return (
-    <header className="header">
-    <h2 className="name">Tanner Flake</h2>
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <Link
@@ -31,11 +26,11 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="/Blog"
+          to="/Portfolio"
           // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Blog' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          Blog
+          Portfolio
         </Link>
       </li>
       <li className="nav-item">
@@ -47,9 +42,17 @@ function NavTabs() {
           Contact
         </Link>
       </li>
+      <li className="nav-item">
+        <Link
+          to="/Resume"
+          // Check to see if the currentPage is `Resume`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
+        </Link>
+      </li>
     </ul>
-    </header>
   );
 }
 
-export default NavTabs;
+export default Navigation;
