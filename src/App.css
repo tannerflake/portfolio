@@ -172,6 +172,36 @@ main {
   color: #0056b3;
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a:hover {
+  color: #0056b3;
+}
+
+.headshot {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add some space above the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 10px;
+}
+
+.footer-links svg {
+  margin-right: 5px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
