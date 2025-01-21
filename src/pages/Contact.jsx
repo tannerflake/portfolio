@@ -74,8 +74,8 @@ function Contact() {
         </div>
         <button type="submit">Send</button>
       </form>
-      <p className="bottom-contact">Email: tannerflake@example.com</p>
-      <p className="bottom-contact">Phone: (123) 456-7890</p>
+      <p className="bottom-contact" style={{ marginTop: '20px' }}>Email: tannerflake@example.com</p>
+      <p className="bottom-contact"> Phone: (123) 456-7890</p>
     </section>
   );
 }

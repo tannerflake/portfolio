@@ -1,8 +1,19 @@
+/* Reset default margin and padding */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+body {
+  font-family: 'Courier Prime', monospace;
 }
 
 .logo {
@@ -76,6 +87,7 @@ main {
   padding: 20px;
   max-width: 600px;
   margin: 0 auto;
+  text-align: left; /* Ensure text alignment is left */
 }
 
 .contact label {
@@ -91,6 +103,7 @@ main {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in the element's total width */
 }
 
 .contact .error {
@@ -109,6 +122,54 @@ main {
 
 .contact button:hover {
   background-color: #0056b3;
+}
+
+.portfolio {
+  padding: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Adjust the max-width as needed */
+  max-height: 200px; /* Adjust the max-height as needed */
+  object-fit: cover;
+}
+
+.project h3 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  color: #0056b3;
 }
 
 @keyframes logo-spin {
